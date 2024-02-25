@@ -277,6 +277,11 @@ class App {
       this._renderWorkoutMarker(work)
     })
   }
+
+  reset() {
+    localStorage.removeItem('workouts')
+    location.reload()
+  }
 }
 
 const app = new App();
